@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="War3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9E-CA-Wdl" userLabel="CardContainerView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="94e-Ef-L2z" userLabel="Card 1">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" red="0.53804632240000005" green="0.64448144659999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="3tT-9j-xpK"/>
+                                            <constraint firstAttribute="height" constant="170" id="VJ9-gC-zHw"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="3tT-9j-xpK"/>
+                                                <exclude reference="VJ9-gC-zHw"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="3tT-9j-xpK"/>
+                                                <include reference="VJ9-gC-zHw"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jjA-83-rnU" userLabel="Card 2">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.14984990070842441" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96367724944976851" green="0.97337667686098583" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="94e-Ef-L2z" firstAttribute="leading" secondItem="z9E-CA-Wdl" secondAttribute="leading" id="0UM-6k-dOt"/>
+                                    <constraint firstItem="94e-Ef-L2z" firstAttribute="top" secondItem="z9E-CA-Wdl" secondAttribute="top" id="29d-wl-CFI"/>
+                                    <constraint firstAttribute="height" constant="170" id="6x6-z9-uMk"/>
+                                    <constraint firstItem="jjA-83-rnU" firstAttribute="width" secondItem="94e-Ef-L2z" secondAttribute="width" id="HLl-4l-UCo"/>
+                                    <constraint firstItem="jjA-83-rnU" firstAttribute="top" secondItem="z9E-CA-Wdl" secondAttribute="top" id="VK7-sA-6H5"/>
+                                    <constraint firstItem="jjA-83-rnU" firstAttribute="height" secondItem="94e-Ef-L2z" secondAttribute="height" id="VcZ-6N-bhF"/>
+                                    <constraint firstAttribute="width" constant="280" id="aw5-xy-Zyq"/>
+                                    <constraint firstAttribute="trailing" secondItem="jjA-83-rnU" secondAttribute="trailing" id="pIv-rA-fWK"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="94e-Ef-L2z"/>
+                                        <exclude reference="jjA-83-rnU"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="6x6-z9-uMk"/>
+                                        <exclude reference="aw5-xy-Zyq"/>
+                                        <exclude reference="0UM-6k-dOt"/>
+                                        <exclude reference="29d-wl-CFI"/>
+                                        <exclude reference="HLl-4l-UCo"/>
+                                        <exclude reference="VK7-sA-6H5"/>
+                                        <exclude reference="VcZ-6N-bhF"/>
+                                        <exclude reference="pIv-rA-fWK"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="94e-Ef-L2z"/>
+                                        <include reference="jjA-83-rnU"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="6x6-z9-uMk"/>
+                                        <include reference="aw5-xy-Zyq"/>
+                                        <include reference="0UM-6k-dOt"/>
+                                        <include reference="29d-wl-CFI"/>
+                                        <include reference="HLl-4l-UCo"/>
+                                        <include reference="VK7-sA-6H5"/>
+                                        <include reference="VcZ-6N-bhF"/>
+                                        <include reference="pIv-rA-fWK"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TL-OW-6Fd" userLabel="ButtonContainerView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Re-dC-VM0">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="3Re-dC-VM0" secondAttribute="centerX" id="PWO-ga-zRo"/>
+                                    <constraint firstAttribute="centerY" secondItem="3Re-dC-VM0" secondAttribute="centerY" id="t8v-Ae-dsX"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="3Re-dC-VM0"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="PWO-ga-zRo"/>
+                                        <exclude reference="t8v-Ae-dsX"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="3Re-dC-VM0"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="PWO-ga-zRo"/>
+                                        <include reference="t8v-Ae-dsX"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wpp-sh-Gwl" userLabel="BackgroundView">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0TL-OW-6Fd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="7ot-rU-Go7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wpp-sh-Gwl" secondAttribute="trailing" id="Ced-sP-CFp"/>
+                            <constraint firstItem="wpp-sh-Gwl" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="GB0-Rw-hcG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="wpp-sh-Gwl" secondAttribute="bottom" id="Prp-gq-kom"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0TL-OW-6Fd" secondAttribute="bottom" id="YeG-Fb-qLd"/>
+                            <constraint firstAttribute="centerX" secondItem="z9E-CA-Wdl" secondAttribute="centerX" id="gK9-YD-OMz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0TL-OW-6Fd" secondAttribute="trailing" id="pAz-By-YNE"/>
+                            <constraint firstAttribute="centerY" secondItem="z9E-CA-Wdl" secondAttribute="centerY" id="trK-V6-iqv"/>
+                            <constraint firstItem="0TL-OW-6Fd" firstAttribute="top" secondItem="z9E-CA-Wdl" secondAttribute="bottom" id="vrj-61-LhV"/>
+                            <constraint firstItem="wpp-sh-Gwl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="wyS-CL-RVV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="z9E-CA-Wdl"/>
+                                <exclude reference="0TL-OW-6Fd"/>
+                                <exclude reference="wpp-sh-Gwl"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="YeG-Fb-qLd"/>
+                                <exclude reference="Ced-sP-CFp"/>
+                                <exclude reference="GB0-Rw-hcG"/>
+                                <exclude reference="Prp-gq-kom"/>
+                                <exclude reference="wyS-CL-RVV"/>
+                                <exclude reference="7ot-rU-Go7"/>
+                                <exclude reference="pAz-By-YNE"/>
+                                <exclude reference="vrj-61-LhV"/>
+                                <exclude reference="gK9-YD-OMz"/>
+                                <exclude reference="trK-V6-iqv"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="z9E-CA-Wdl"/>
+                                <include reference="0TL-OW-6Fd"/>
+                                <include reference="wpp-sh-Gwl"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="YeG-Fb-qLd"/>
+                                <include reference="Ced-sP-CFp"/>
+                                <include reference="GB0-Rw-hcG"/>
+                                <include reference="Prp-gq-kom"/>
+                                <include reference="wyS-CL-RVV"/>
+                                <include reference="7ot-rU-Go7"/>
+                                <include reference="pAz-By-YNE"/>
+                                <include reference="vrj-61-LhV"/>
+                                <include reference="gK9-YD-OMz"/>
+                                <include reference="trK-V6-iqv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="wpp-sh-Gwl" id="Xte-Ny-rDH"/>
+                        <outlet property="firstCardImageView" destination="94e-Ef-L2z" id="4md-E1-L5B"/>
+                        <outlet property="playButton" destination="0TL-OW-6Fd" id="qqp-G5-cIw"/>
+                        <outlet property="secondCardImageView" destination="jjA-83-rnU" id="gOc-fr-xmf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CPX-v0-4g0">
+            <objects>
+                <viewController id="waF-e1-9hv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sNQ-ct-KTk"/>
+                        <viewControllerLayoutGuide type="bottom" id="veo-jb-hb6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fFU-gA-K43">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8gF-ff-1yP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="0.0" blue="0.070606579984313633" alpha="1" colorSpace="calibratedRGB"/>
+</document>
